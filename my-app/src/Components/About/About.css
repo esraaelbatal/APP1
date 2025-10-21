@@ -1,0 +1,42 @@
+.about-section {
+  text-align: center;
+  padding: 100px 0;
+  background: #1abc9c;
+  color: white;
+}
+
+.star {
+  position: absolute;
+  left: 50%;
+  top: -12px;
+  transform: translateX(-50%);
+  background: #1abc9c;
+  padding: 0 10px;
+  font-size: 20px;
+}
+.about-text {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  max-width: 1000px;
+  margin: auto;
+  text-align: left;
+}
+
+.about-text p {
+  width: 45%;
+  line-height: 1.6;
+}
+
+/* استجابة الموبايل */
+@media (max-width: 768px) {
+  .about-text {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .about-text p {
+    width: 80%;
+    text-align: center;
+  }
+}
